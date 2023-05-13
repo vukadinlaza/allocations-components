@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { useState } from "react";
-export default function Feedback() {
+
+const Feedback = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -26,4 +27,6 @@ export default function Feedback() {
       )}
     </div>
   );
-}
+};
+
+export default Feedback;

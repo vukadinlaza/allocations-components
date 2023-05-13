@@ -2,13 +2,9 @@ import { Card } from "@mui/material";
 import Image from "next/image";
 import React, { FunctionComponent } from "react";
 import Button from "../Button/Button";
+import { IMissingDataProps } from "./props";
 
-interface MissingDataProps {
-  text: string;
-  btnLabel: string;
-}
-
-const MissingData: FunctionComponent<MissingDataProps> = ({
+const MissingData: FunctionComponent<IMissingDataProps> = ({
   text,
   btnLabel,
 }) => {

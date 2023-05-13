@@ -2,16 +2,9 @@
 import { CircularProgress } from "@mui/material";
 import React from "react";
 import { FunctionComponent } from "react";
+import { IButtonProps } from "./props";
 
-interface ButtonProps {
-  onClick?: () => void;
-  loading?: boolean;
-  label: string;
-  disabled?: boolean;
-  color?: string;
-}
-
-const Button: FunctionComponent<ButtonProps> = ({
+const Button: FunctionComponent<IButtonProps> = ({
   onClick,
   loading,
   label,
