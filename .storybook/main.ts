@@ -22,6 +22,20 @@ module.exports = {
 
   webpackFinal: async (config) => {
     config.module.rules.push({
+      test: /\.(png|jpg|jpeg|gif|svg)$/i,
+      use: [
+        {
+          loader: "file-loader",
+          options: {
+            name: "[path][name].[ext]",
+            outputPath: "assets/images/",
+            publicPath: "../assets/images/",
+          },
+        },
+      ],
+      include: path.resolve(__dirname, "../"),
+    });
+    config.module.rules.push({
       test: /\.scss$/,
       use: [
         "style-loader",

@@ -10,7 +10,7 @@ const Checkbox: FunctionComponent<ICheckboxProps> = ({
   return (
     <div className="flex items-start my-3 cursor-pointer" onClick={onChange}>
       <Image
-        src={selected ? "/checkbox_checked.svg" : "/checkbox_empty.svg"}
+        src={selected ? "./checkbox_checked.svg" : "./checkbox_empty.svg"}
         alt="checkbox"
         className={`mr-2 ${selected ? "" : "opacity-50"}`}
         width={20}
