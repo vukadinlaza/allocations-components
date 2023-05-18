@@ -14,6 +14,6 @@ export const Default: Story = {
   args: {
     onChange: () => console.log("changed"),
     label: "test",
-    selected: true,
+    selected: false,
   },
 };
