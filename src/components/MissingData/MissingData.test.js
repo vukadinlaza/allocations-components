@@ -1,7 +1,7 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import MissingData from './MissingData'
 
 test('MissingData renders', () => {
-	renderer.create(<MissingData />)
+	render(<MissingData />)
 })

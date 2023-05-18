@@ -1,7 +1,7 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import Feedback from './Feedback'
 
 test('Feedback renders', () => {
-	renderer.create(<Feedback />)
+	render(<Feedback />)
 })

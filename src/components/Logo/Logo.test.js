@@ -1,7 +1,10 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { fireEvent, render, screen } from '@testing-library/react'
 import Logo from './Logo'
 
 test('Logo renders', () => {
-	renderer.create(<Logo />)
+	render(<Logo />)
+	const logo = screen.getByTestId('logo')
+
+	fireEvent.click(logo)
 })

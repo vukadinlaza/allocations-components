@@ -34,6 +34,7 @@ const AvatarComponent: FunctionComponent<IAvatarProps> = ({
       >
         {getFirstLetter()}
       </Avatar>
+      <h1>Hello</h1>
       {open && (
         <div className="absolute right-0 bg-white border top-12 z-[1000]">
           <MenuList>

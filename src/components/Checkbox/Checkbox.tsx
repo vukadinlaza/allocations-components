@@ -14,6 +14,7 @@ const Checkbox: FunctionComponent<ICheckboxProps> = ({
 	return (
 		<div
 			className='flex items-start my-3 cursor-pointer'
+			data-testid="checkbox"
 			onClick={onChangeHandler}
 		>
 			<Image

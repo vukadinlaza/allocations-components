@@ -1,7 +1,7 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import Select from './Select'
 
 test('Select renders', () => {
-	renderer.create(<Select />)
+	render(<Select />)
 })

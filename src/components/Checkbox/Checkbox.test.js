@@ -1,12 +1,10 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { fireEvent, render, screen } from '@testing-library/react'
 import Checkbox from './Checkbox'
 
 test('Changes status on click', () => {
-	const component = renderer.create(<Checkbox />)
-	const tree = component.toJSON()
+	render(<Checkbox />)
+	const checkbox = screen.getByTestId('checkbox')
 
-	renderer.act(() => {
-		tree.props.onClick()
-	})
+	fireEvent.click(checkbox)
 })

@@ -1,7 +1,7 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import None from './None'
 
 test('Test renders', () => {
-	renderer.create(<None />)
+	render(<None />)
 })

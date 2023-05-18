@@ -1,7 +1,7 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import AvatarComponent from './Avatar'
 
 test('Avatar renders', () => {
-	renderer.create(<AvatarComponent />)
+	render(<AvatarComponent />)
 })

@@ -23,6 +23,7 @@ module.exports = {
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.(png|jpg|jpeg|gif|svg)$/i,
+      type: 'asset/resource',
       use: [
         {
           loader: "file-loader",
@@ -33,7 +34,7 @@ module.exports = {
           },
         },
       ],
-      include: path.resolve(__dirname, "../"),
+      include: path.resolve(__dirname, "../src"),
     });
     config.module.rules.push({
       test: /\.scss$/,

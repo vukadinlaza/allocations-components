@@ -6,11 +6,12 @@ import { ILogoProps } from "./props";
 const Logo: FunctionComponent<ILogoProps> = ({ onClick }) => {
   return (
     <Image
-      src="/src/assets/images/logo.png"
+      src="/logo.png"
       alt="Allocations.com"
       width={128}
       height={19}
       className="cursor-pointer"
+      data-testid="logo"
       onClick={onClick ? () => onClick() : () => {}}
     />
   );
