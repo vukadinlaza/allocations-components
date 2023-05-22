@@ -1,10 +1,10 @@
+import React, {FunctionComponent} from "react";
 import { Card } from "@mui/material";
 import Image from "next/image";
-import React from "react";
 
-export default function None({ text }: { text: string }) {
+const None: FunctionComponent<{text: string, className?: string}> = ({ text, className }) => {
   return (
-    <Card className="card" variant="outlined">
+    <Card className={`card ${className}`} variant="outlined">
       <Image
         alt="None"
         src="/no_file.svg"
@@ -16,3 +16,5 @@ export default function None({ text }: { text: string }) {
     </Card>
   );
 }
+
+export default None

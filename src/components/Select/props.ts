@@ -3,4 +3,5 @@ export type SelectProps<T> = {
   onChange: (selected: string) => any;
   displayLabel?: (item: any) => string;
   selected?: any;
+  className?: string;
 };

@@ -6,6 +6,7 @@ const Checkbox: FunctionComponent<ICheckboxProps> = ({
 	// onChange,
 	label,
 	selected,
+	className
 }) => {
 	const onChangeHandler = () => {
 		!selected
@@ -13,7 +14,7 @@ const Checkbox: FunctionComponent<ICheckboxProps> = ({
 
 	return (
 		<div
-			className='flex items-start my-3 cursor-pointer'
+			className={`flex items-start my-3 cursor-pointer ${className}`}
 			data-testid="checkbox"
 			onClick={onChangeHandler}
 		>

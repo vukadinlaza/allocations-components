@@ -1,19 +1,20 @@
-import React from "react";
-import { SelectProps } from "./props";
+import React, {FunctionComponent} from "react";
+import {SelectProps} from './props'
 
-function Select<T>({
+const Select: FunctionComponent<SelectProps<any>> = ({
   items,
   onChange,
   displayLabel,
   selected,
-}: SelectProps<T>) {
+  className
+}) => {
   const handleSelectChange = (e: any) => {
     if (!items) return;
     onChange(e.target.value);
   };
 
   return (
-    <select onChange={handleSelectChange} className="capitalize">
+    <select onChange={handleSelectChange} className={`capitalize ${className}`}>
       <option selected>{selected}</option>
       {items &&
         items

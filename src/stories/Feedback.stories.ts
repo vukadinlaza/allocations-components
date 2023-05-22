@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Feedback from "../components/FeedBack/Feedback";
+import FeedBack from "../components/FeedBack";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
-  title: "Components/Feedback",
-  component: Feedback,
+  title: "Components/FeedBack",
+  component: FeedBack,
   tags: ["autodocs"],
-} satisfies Meta<typeof Feedback>;
+} satisfies Meta<typeof FeedBack>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

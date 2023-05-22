@@ -1,8 +1,8 @@
+import React, {FunctionComponent} from 'react'
 import Image from 'next/image'
-import React from 'react'
 import { useState } from 'react'
 
-const Feedback = () => {
+const FeedBack: FunctionComponent<{className?: string}> = ({className}) => {
 	const [open, setOpen] = useState(false)
 
 	const onClickChange = () => {
@@ -10,7 +10,7 @@ const Feedback = () => {
 	}
 
 	return (
-		<div className='relative'>
+		<div className={`relative ${className}`}>
 			<div
 				onClick={onClickChange}
 				className='flex items-center mr-2 transition select hover:bg-gray-100'
@@ -33,4 +33,4 @@ const Feedback = () => {
 	)
 }
 
-export default Feedback
+export default FeedBack

@@ -6,10 +6,11 @@ import { IMissingDataProps } from "./props";
 
 const MissingData: FunctionComponent<IMissingDataProps> = ({
   text,
-  btnLabel,
+  className,
+  children
 }) => {
   return (
-    <Card className="card" variant="outlined">
+    <Card className={`card ${className}`} variant="outlined">
       <Image
         alt="Missing"
         src="src/assets/images/missing.svg"
@@ -18,7 +19,7 @@ const MissingData: FunctionComponent<IMissingDataProps> = ({
         height={75}
       />
       <p className="mb-4">{text}</p>
-      <Button label={btnLabel} />
+      <Button>{children}</Button>
     </Card>
   );
 };

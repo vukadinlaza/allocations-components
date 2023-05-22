@@ -1,4 +1,5 @@
 export interface IMissingDataProps {
   text: string;
-  btnLabel: string;
+  className?: string;
+  children?: any;
 }

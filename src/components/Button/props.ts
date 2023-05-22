@@ -1,7 +1,9 @@
 export interface IButtonProps {
   onClick?: () => void;
   loading?: boolean;
-  label: string;
   disabled?: boolean;
   color?: string;
+  label?: string;
+  className?: string;
+  children?: any;
 }

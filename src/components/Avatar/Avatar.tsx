@@ -1,11 +1,12 @@
-import { Avatar, MenuItem, MenuList } from "@mui/material";
 import React, { FunctionComponent } from "react";
+import { Avatar, MenuItem, MenuList } from "@mui/material";
 import { useState } from "react";
 import { IAvatarProps, IMenuItem } from "./props";
 
 const AvatarComponent: FunctionComponent<IAvatarProps> = ({
   email,
   menuItems,
+  className,
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -21,7 +22,7 @@ const AvatarComponent: FunctionComponent<IAvatarProps> = ({
   };
 
   return (
-    <div className="relative avatar">
+    <div className={`relative avatar ${className}`}>
       <Avatar
         className="cursor-pointer"
         onClick={() => setOpen(!open)}

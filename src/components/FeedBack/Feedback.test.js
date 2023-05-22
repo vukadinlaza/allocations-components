@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Feedback from './Feedback'
+import FeedBack from './FeedBack'
 
-test('Feedback renders', () => {
-	render(<Feedback />)
+test('FeedBack renders', () => {
+	render(<FeedBack />)
 })
